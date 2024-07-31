@@ -1,0 +1,708 @@
+// Here you can add other styles
+
+
+
+
+
+.login-container {
+    display: flex;
+    background: rgb(202 202 202 / 7%);
+    margin: auto;
+    align-items: center;
+    min-width: 370px;
+    box-shadow: 4px 4px 21px rgb(17 0 255 / 20%);
+    margin-bottom: 70px;
+}
+
+.login-container .logo svg {
+    height: 40px;
+    width: 40px;
+    fill: var(--primary-color);
+}
+
+.login-container .login-form {
+    width: 50%;
+    box-sizing: border-box;
+    padding-left: 50px;
+    display: flex;
+    padding-right: 50px;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1;
+}
+
+.login-container .login-form .login-form-inner {
+    width: 100%;
+}
+
+.login-container .login-form .google-login-button .google-icon svg {
+    height: 20px;
+    display: flex;
+    margin-right: 10px;
+}
+
+.login-container .login-form .google-login-button {
+    color: var(--text);
+    border: 1px solid var(--grey);
+    margin: 40px 0 20px;
+}
+
+.login-container .login-form .sign-in-seperator {
+    text-align: center;
+    color: var(--placeholder);
+    position: relative;
+    margin: 30px 0 20px;
+}
+
+.login-container .login-form .sign-in-seperator span {
+    background: var(--white);
+    z-index: 1;
+    position: relative;
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+.login-container .login-form .sign-in-seperator:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: var(--grey);
+    left: 0;
+    top: 50%;
+    z-index: 0;
+}
+
+.login-container .login-form .login-form-group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.login-container .login-form .login-form-group label {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text);
+    margin-bottom: 10px;
+}
+
+.login-container .login-form .login-form-group input {
+    padding: 13px 20px;
+    box-sizing: border-box;
+    border: 1px solid var(--grey);
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--text);
+    transition: linear 0.2s;
+}
+
+.login-container .login-form .login-form-group input:focus {
+    outline: none;
+    border: 1px solid var(--primary-color);
+}
+
+.login-container .login-form .login-form-group input::-webkit-input-placeholder {
+    color: var(--placeholder);
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.login-container .login-form .login-form-group.single-row {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 5px;
+}
+
+/* custom checkbox */
+.login-container .login-form .custom-check input[type="checkbox"] {
+    height: 23px;
+    width: 23px;
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+    appearance: none;
+    border: 2px solid var(--primary-color);
+    border-radius: 3px;
+    background: var(--white);
+    position: relative;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.login-container .login-form .custom-check input[type="checkbox"]:checked {
+    border: 2px solid var(--primary-color);
+    background: var(--primary-color);
+}
+
+.login-container .login-form .custom-check input[type="checkbox"]:checked:before,
+.login-container .login-form .custom-check input[type="checkbox"]:checked:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background: var(--white);
+}
+
+.login-container .login-form .custom-check input[type="checkbox"]:checked:before {
+    width: 8px;
+    top: 11px;
+    left: 2px;
+    transform: rotate(44deg);
+}
+
+.login-container .login-form .custom-check input[type="checkbox"]:checked:after {
+    width: 14px;
+    top: 8px;
+    left: 5px;
+    transform: rotate(-55deg);
+}
+
+.login-container .login-form .custom-check input[type="checkbox"]:focus {
+    outline: none;
+}
+
+.login-container .login-form .custom-check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container .login-form .custom-check label {
+    margin: 0;
+    color: var(--text);
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.login-container .login-form .link {
+    color: var(--primary-color);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.login-container .login-form .link:hover {
+    text-decoration: underline;
+}
+
+.login-container .login-form .login-cta {
+    color: var(--white);
+    text-decoration: none;
+    border: 1px solid var(--primary-color);
+    margin: 25px 0 35px;
+    background: var(--primary-color);
+}
+
+.login-container .login-form .login-cta:hover {
+    background: var(--login-cta-hover);
+}
+
+.login-container .onboarding {
+    flex: 1;
+    background: white;
+    display: none;
+    width: 50%;
+}
+
+.login-container .login-form .login-form-group label .required-star {
+    color: var(--primary-color);
+    font-size: 18px;
+    line-height: 10px;
+}
+
+.login-container .rounded-button {
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+    border-radius: 50px;
+    padding: 13px 20px;
+    box-sizing: border-box;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 500;
+    align-items: center;
+    transition: linear 0.2s;
+}
+
+.login-container .rounded-button:hover {
+    box-shadow: 0px 0px 4px 0px var(--grey);
+}
+
+.login-container .body-text {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text);
+}
+
+.login-container .onboarding .swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login-container .onboarding .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--text);
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.login-container .onboarding .swiper-pagination-bullet-active {
+    background-color: var(--primary-color);
+}
+
+.login-container .onboarding .swiper-slide {
+    flex-direction: column;
+    display: flex;
+}
+
+.login-container .onboarding .swiper-slide .slide-image img {
+    width: 60%;
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+
+.login-container .onboarding .slide-content {
+    width: 60%;
+}
+
+.login-container .onboarding .slide-content h2 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #2151A1;
+}
+
+.login-container .onboarding .slide-content p {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #9A031E;
+}
+
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-container-horizontal>.swiper-pagination-bullets {
+    bottom: 30px;
+}
+
+.login-container .login-form .login-form-inner h1 {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .login-container .onboarding {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .login-container {
+        height: 100vh;
+    }
+}
+
+@media screen and (width: 768px) {
+    .login-container .onboarding {
+        order: 0;
+    }
+
+    .login-container .login-form {
+        order: 1;
+    }
+
+    .login-container {
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .login-container .login-form {
+        padding: 20px;
+    }
+
+    .login-container .login-form-group {
+        margin-bottom: 16px;
+    }
+
+    .login-container {
+        margin: 0;
+    }
+}
+
+.register-div {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.register-div a {
+    margin-left: 1px;
+}
+
+
+.login-form-inner h4 {
+    color: #9A031E;
+    font-family: 'poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.login-form-inner h5 {
+    color: #2151A1;
+    font-family: 'poppins', sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+input:-internal-autofill-selected {
+    appearance: menulist-button;
+    background-image: none !important;
+    // background-color: light-dark(rgb(232, 240, 254), rgba(70, 90, 126, 0.4)) !important;
+    background-color: white !important;
+    color: fieldtext !important;
+}
+
+.login-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+
+.login-container .login-form .login-cta {
+    color: #ffff;
+    text-decoration: none;
+    border: 1px solid var(--primary-color);
+    margin: 25px 0 35px;
+    background-color: #9A031E;
+}
+
+.login-container .login-form .login-cta:hover {
+    background-color: #9A031E;
+}
+
+section.tables .card-body {
+    padding: 0;
+}
+
+.table>:not(caption)>*>* {
+    padding: 10px 5px !important;
+    border-color: #000000 !important;
+    background-color: #E1E8FA !important;
+}
+
+table.table.table-bordered.striped {
+    margin-bottom: 0px;
+}
+
+section.tables .form-control {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.3;
+    color: #212529;
+}
+
+.table-bordered>:not(caption)>* {
+    border-color: #000000 !important;
+    background-color: #E1E8FA !important;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+    border-left-width: 0px;
+}
+
+
+.table-bordered> :not(caption)>*>* {
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: small;
+    line-height: 22px;
+    color: #212529;
+}
+
+table.comparisions.table.table-lg.table-striped {
+    border: 1px solid #000000;
+}
+
+.table-striped.comparisions>tbody>tr:nth-of-type(odd)>* {
+    --bs-table-accent-bg: #DDE6FF;
+    color: var(--bs-table-striped-color);
+}
+
+.table.comparisions>:not(caption)>*>* {
+    background-color: #F2F6FF;
+}
+
+.table.comparisions>tbody {
+    vertical-align: middle;
+}
+
+table.comparisions.table.table-lg.table-striped td {
+    font-weight: 500;
+    font-size: 15px;
+    color: #000000;
+}
+
+.table>:not(caption)>*>* {
+    padding: 20px 15px;
+}
+
+table.comparisions.table.table-lg.table-striped p {
+    margin-bottom: 0px;
+}
+
+.form-check .form-check-input {
+    float: initial;
+    margin-left: -1.5em;
+}
+
+.form-switch {
+    padding-left: 2.5em;
+    margin: auto;
+}
+
+.form-check-input:checked {
+    background-color: var(--cui-form-check-input-checked-bg-color, var(--cui-success));
+    border-color: var(--cui-form-check-input-checked-border-color, var(--cui-success));
+}
+
+table.table.admin_abcdsd ul li {
+    padding-bottom: 10px;
+    list-style: none;
+}
+
+table.table.admin_abcdsd ul {
+    margin-bottom: 0px;
+    padding-left: 5px;
+}
+
+.userprofilesec {
+    background: white;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 25px 35px 25px;
+    box-shadow: 0px 0px 4px 2px #8187AC40;
+}
+
+.userprofilesec h2 {
+    color: #E83A14;
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.basicsinformass {
+    background: white;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 25px 35px 25px;
+    box-shadow: 0px 0px 4px 2px #8187AC40;
+}
+
+.basicsinformass h5 {
+    color: #898F93;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.basicsinformass p {
+    color: #E83A14;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+}
+
+.profileimgc {
+    position: relative;
+    display: block;
+    margin: auto;
+}
+
+.profileimgc img {
+    width: 50%;
+    border-radius: 100%;
+    margin-bottom: 20px;
+    height: 210px;
+    object-fit: contain;
+}
+
+img.photoorodfd {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+.matrimonialform.mb-5.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.matrimonialform.mb-5.container-fluid label {
+    margin-bottom: 15px;
+    color: #000000;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.matrimonialform.mb-5.container-fluid select.mb-3.form-select {
+    background-color: #EAEAEA;
+    height: 45px;
+}
+
+.matrimonialform.mb-5.container-fluid .form-control {
+    background-color: #EAEAEA;
+    height: 45px;
+}
+
+.matrimonial-profile.container-fluid {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background: #f4f4f4;
+}
+
+.profilegallery h3 {
+    background: #102A7F;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 10px 30px 13px;
+    color: white;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+.profilegallery {
+    background: #FFFFFF;
+    box-shadow: 0px 15.86px 84.57px 0px #141E271A;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.user-profile-image {
+    width: 80%;
+    margin: auto;
+    object-fit: cover;
+    display: block;
+    height: 300px;
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0px 8.81px 63.43px 0px #141E270D;
+}
+
+img.gallimg {
+    width: 20px;
+    margin-right: 12px;
+    position: relative;
+    top: -2px;
+}
+
+.descr-content {
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+}
+
+img.photoorodfd {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.photo-container.mb-2 {
+    position: relative;
+}
+
+.disabled-phone-input {
+    background-color: #e9ecef;
+    /* Bootstrap disabled input background color */
+    opacity: 1;
+    /* Make sure it's fully opaque */
+    cursor: not-allowed;
+}
+
+.appearance-none {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: none;
+}
+
+.img-icon {
+    border-radius: 100%;
+}
+
+.passport-photos {
+    display: flex;
+    gap: 40px;
+    /* Adjust the gap between images as needed */
+}
+
+.passport-photos img {
+    max-width: 100px;
+    /* Adjust the max width as needed */
+    height: auto;
+}
+
+.btn-danger {
+    --cui-btn-color: #ffff;
+    --cui-btn-bg: #e55353;
+    --cui-btn-border-color: #e55353;
+    --cui-btn-hover-color: #080a0c;
+    --cui-btn-hover-bg: #e96d6d;
+    --cui-btn-hover-border-color: #e86464;
+    --cui-btn-focus-shadow-rgb: 196, 72, 72;
+    --cui-btn-active-color: #080a0c;
+    --cui-btn-active-bg: #ea7575;
+    --cui-btn-active-border-color: #e86464;
+    --cui-btn-active-shadow: inset 0 3px 5px rgba(8, 10, 12, 0.125);
+    --cui-btn-disabled-color: #080a0c;
+    --cui-btn-disabled-bg: #e55353;
+    --cui-btn-disabled-border-color: #e55353;
+}
